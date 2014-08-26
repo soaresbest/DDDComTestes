@@ -2,11 +2,12 @@
 
 namespace DDDComTestes.Dominio.Entidades.Pessoas
 {
-    public class Pessoa
+    public class Pessoa : IEntidade
     {
+        public int ID { get; set; }
         public string Nome { get; set; }
         public int Idade { get; set; }
-        public IEnumerable<Documento> Documentos { get; set; }
-        public IEnumerable<Endereco> Enderecos { get; set; }
+        public IList<Documento> Documentos { get; set; }
+        public IList<Endereco> Enderecos { get; set; }
     }
 }
