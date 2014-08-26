@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Pessoas\Documento.cs" />
+    <Compile Include="Entidades\Pessoas\Endereco.cs" />
+    <Compile Include="Entidades\Pessoas\Pessoa.cs" />
+    <Compile Include="Entidades\Pessoas\TipoDocumento.cs" />
+    <Compile Include="Entidades\Pessoas\TipoEndereco.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
