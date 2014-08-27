@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace DDDComTestes.Web.Controllers
+namespace DDDComTestes.Infraestrutura.Web.Controllers
 {
     public class HomeController : Controller
     {
