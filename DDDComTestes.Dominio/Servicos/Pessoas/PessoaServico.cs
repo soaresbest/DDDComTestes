@@ -2,7 +2,7 @@
 using DDDComTestes.Dominio.Entidades.Pessoas;
 using DDDComTestes.Dominio.Repositorios.Pessoas;
 
-namespace DDDComTestes.Dominio.Servicos
+namespace DDDComTestes.Dominio.Servicos.Pessoas
 {
     public class PessoaServico
     {

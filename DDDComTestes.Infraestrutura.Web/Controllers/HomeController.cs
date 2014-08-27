@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 using DDDComTestes.Dominio.Repositorios.Pessoas;
-using DDDComTestes.Dominio.Servicos;
+using DDDComTestes.Dominio.Servicos.Pessoas;
 using DDDComTestes.Infraestrutura.Repositorio.FileSystem.Pessoas;
 using DDDComTestes.Infraestrutura.Web.Models;
 
