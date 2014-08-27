@@ -126,6 +126,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PessoaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -153,9 +154,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -164,6 +163,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DDDComTestes.Dominio\DDDComTestes.Dominio.csproj">
+      <Project>{D14F5367-C21D-4FB5-95A4-000C2C6EEE94}</Project>
+      <Name>DDDComTestes.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DDDComTestes.Infraestrutura.Repositorio.FileSystem\DDDComTestes.Infraestrutura.Repositorio.FileSystem.csproj">
+      <Project>{FE81EC96-AAA6-4991-96A7-CA60EED6D333}</Project>
+      <Name>DDDComTestes.Infraestrutura.Repositorio.FileSystem</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
