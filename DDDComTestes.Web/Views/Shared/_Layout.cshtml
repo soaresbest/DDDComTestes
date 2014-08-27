@@ -1,0 +1,14 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/content/bootstrap")
+</head>
+<body>
+  @RenderBody()
+  @Scripts.Render("~/scripts/jquery")
+  @Scripts.Render("~/scripts/bootstrap")
+</body>
+</html>

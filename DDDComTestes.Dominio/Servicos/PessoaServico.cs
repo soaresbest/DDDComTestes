@@ -19,17 +19,17 @@ namespace DDDComTestes.Dominio.Servicos
             get { return MAIORIDADE; }
         }
 
-        public void AdicionarCNH(int pessoaID, string numeroCNH)
+        public void AdicionarCNH(string cpf, string numeroCNH)
         {
-            Pessoa pessoa = _pessoaRepositorio.CarregarPorID(pessoaID);
+            Pessoa pessoa = _pessoaRepositorio.CarregarPorCPF(cpf);
 
             if (null == pessoa)
             {
                 //TODO especializar a exception ou retornar um Result preparado.
                 throw new Exception(
                     string.Format(
-                        "Pessoa ID {0} não existe."
-                      , pessoaID));
+                        "Nenhuma pessoa encontrada com o CPF {0}"
+                      , cpf));
             }
 
             if (pessoa.Idade < 18)
@@ -38,7 +38,7 @@ namespace DDDComTestes.Dominio.Servicos
                 throw new Exception(
                     string.Format(
                         "Impossível adicionar um documento do tipo CNH, pessoa ID {0} é menor, maioridade: {1}."
-                      , pessoaID
+                      , pessoa.ID
                       , MAIORIDADE));
             }
 
